@@ -1,28 +1,15 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    const int D = 1000;
-    bool sieve[D + 1];
 
-    for (int i = 2; i <= D; i++) {
-        sieve[i] = true;
-    }
+    int a, b;
 
-    for (int i = 2; i <= D; i++) {
-        if (sieve[i]) {
-            for (int j = i * 2; j <= D; j += i) {
-                sieve[j] = false;
-            }
-        }
-    }
+    std::cout << "Впиши два числа: ";
+    std::cin >> a >> b;
 
-    for (int i = 2; i <= D; i++) {
-        if (sieve[i]) {
-            cout << i << " ";
-        }
-    }
-    cout << endl;
+    std::cout << "Сума: " << (a + b) << std::endl;
+    std::cout << "Різниця: " << (a - b) << std::endl;
+    std::cout << "Добуток: " << (a * b) << std::endl;
+
     return 0;
 }
