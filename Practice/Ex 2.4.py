@@ -11,4 +11,4 @@ def prime_factors(n):
 
 number = 250
 factors = prime_factors(number)
-print(f"{number} = {', '.join(map(str, factors))}")
+print(f"{number} = {', '.join(map(str, factors))}")Ф
